@@ -1,0 +1,40 @@
+{
+  "name": "create-e-cattle-app",
+  "version": "0.0.8",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andre-violin/create-e-cattle-app"
+  },
+  "keywords": [
+    "module-federation",
+    "pwa",
+    "vite",
+    "vue",
+    "graphql",
+    "javascript",
+    "microfrontend"
+  ],
+  "bin": {
+    "create-e-cattle-app": "index.js"
+  },
+  "author": "André L. Violin",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@eslint/json": "^0.11.0",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.10.1",
+    "picocolors": "^1.1.1"
+  }
+}
