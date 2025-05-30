@@ -1,79 +1,82 @@
+Create e-Cattle is a command line application (CLI) that simplifies the process of creating and configuring Progressive Web App (PWA)-integrated micro-frontend applications for the e-Cattle platform.
+
 <!-- ![Logo Create e-Cattle](assets/logo.png){style="display: block; margin: auto"} -->
 <p align="center">
-  <a href="https://www.npmjs.com/package/create-e-cattle-app">
-      <img src="https://github.com/andre-violin/create-e-cattle-app/raw/main/assets/logo.png" alt="Create e-Cattle logo" title="Create e-Cattle" />
-  </a>
+<a href="https://www.npmjs.com/package/create-e-cattle-app">
+<img src="https://github.com/andre-violin/create-e-cattle-app/raw/main/assets/logo.png" alt="Create e-Cattle logo" title="Create e-Cattle" />
+</a>
 </p>
 
-## 🗒️ Sobre o Create e-Cattle
+## 🗒️ About Create e-Cattle
 
-Create e-Cattle é uma aplicação web que simplifica o processo de criação e configuração de aplicações micro-frontend integradas com Progressive Web App (PWA)  para a Plataforma e-Cattle.
+Create e-Cattle is a command-line application (CLI) that simplifies the process of creating and configuring micro-frontend applications integrated with Progressive Web App (PWA) for the e-Cattle platform.
 
-Com ela é possível criar aplicações base, *host* e *remote*, utilizando a arquitetura de *module-federation* e *Progressive Web App* (PWA), para a Plataforma e-Cattle.
+With it, you can create base, _host_ and _remote_ applications, using the _module-federation_ and _Progressive Web App_ (PWA) architecture, for the e-Cattle Platform.
 
-Os módulos foram desenvolvidos utilizando os principais conceitos arquiteturais de micro-frontend e tecnoplogias atuais para criação de aplicações como Vite, Vue.js, *module-federation* e PWA.
+The modules were developed using the main architectural concepts of micro-frontend and current technologies for creating applications such as Vite, Vue.js, _module-federation_ and PWA.
 
 ---
 
-## 👩🏿‍💻 Como usar
+## 👩🏿‍💻 How to use
 
-Antes de utilizar esta ferramente, o usuário deverá verificar se tem os seguintes recursos instalados em seu equipamento:
+Before using this tool, the user must check if they have the following resources installed on their equipment:
+
 - Node.js
 - Git
 
-##### Os seguintes passsos deverão ser seguidos para utilizar adequadamente este gerador de projetos:
+##### The following steps must be followed to properly use this project generator:
 
-1. Abra o terminal/prompt de comando de sua preferência. Selecione um local em seu computador em que deseja criar o projeto e digite o seguinte comando:
-
-    ```bash
-    npx create-e-cattle-app
-    ```
-
-2. Em seguida, defina um nome para o projeto.
-
-    <p align="center">
-      <img src="https://github.com/andre-violin/create-e-cattle-app/raw/main/assets/name.png" alt="Imagem mostrando o usuário definido o nome no terminal ou prompt de comando" />
-    </p>
-
-3. O próximo passo será escolher o tipo de projeto. São três opções para escolher: Base, Host e Remote.
-
-    <p align="center">
-      <img src="https://github.com/andre-violin/create-e-cattle-app/raw/main/assets/type.png" alt="Imagem mostrando o usuário escolhendo o tipo do projeto no terminal ou prompt de comando" />
-    </p>
-
-    - **Base:** Esta opção define uma base mínima para executar de forma integrada o *host* e o(s) *remote(s)*. O projeto Base conta apenas com um `package.json` com toda a estrutura e scripts para rodar os demais projetos (*host* e *remote(s)*) contidos nele um por um.
-    - **Host:** Cria um projeto base com as configurações necessárias para que seja um micro-frontend integrando com tecnicas de aplicação *web* progressiva (pwa) que servirá como hospedeiro do(s) *remote(s)*. Já vem com alguns componentes internos (formulário de cadastro de usuário, formulário de *login*, menu de navegação e registro de aplicação) que poderão ser alterados a gosto do desenvolvedor.
-    - **Remote:** Assim como a opção anterior, escolhendo essa opção será definido um projeto base com as configurações necessárias para que seja um micro-frontend integrado com tecnicas de aplicação *web* progressiva (pwa) para uma aplicação *remote*. Entretando essa aplicação não conta com componentes internos.
-
-4. Por último, o usuário deverá escolher se quer que os módulos sejam instados imediatamente ou se ele fará isso em um momento posterior:
-
-    <p align="center">
-      <img src="https://github.com/andre-violin/create-e-cattle-app/raw/main/assets/dependecies.png" alt="Imagem mostrando o usuário escolhendo no terminal ou prompt de comando se os módulos serão intalados imediatamente ou não" />
-    </p>
-
-Uma mensagem é apresentado após o processo:
-
-  <p align="center">
-    <img src="https://github.com/andre-violin/create-e-cattle-app/raw/main/assets/installed.png" alt="Imagem mostrando uma mensagem final" />
-  </p>
-
-## Contribuir 🚀
-
-Se quiser contribuir, clone este repositório, crie sua própria *branch* de trabalho e mãos à obra!
+1. Open the terminal/command prompt of your choice. Select a location on your computer where you want to create the project and type the following command:
 
 ```bash
-git clone https://github.com/andre-violin/create-e-cattle-app.git
+npx create-e-cattle-app
+```
+
+2. Next, set a name for the project.
+
+<p align="center">
+<img src="https://github.com/andre-violin/create-e-cattle-app/raw/main/assets/name.png" alt="Image showing the user setting the name in the terminal or command prompt" />
+</p>
+
+3. The next step will be to choose the type of project. There are three options to choose from: Base, Host, and Remote.
+
+<p align="center">
+<img src="https://github.com/andre-violin/create-e-cattle-app/raw/main/assets/type.png" alt="Image showing the user choosing the project type in the terminal or command prompt" />
+</p>
+
+- **Base:** This option defines a minimum base to run the _host_ and _remote(s)_ in an integrated manner. The Base project only has a `package.json` with all the structure and scripts to run the other projects (_host_ and _remote(s)_) contained in it one by one.
+- **Host:** Creates a base project with the necessary configurations to be a micro-frontend integrating with progressive _web_ application (pwa) techniques that will serve as the host of the _remote(s)_. It already comes with some internal components (user registration form, _login_ form, navigation menu and application registration) that can be changed according to the developer's wishes.
+- **Remote:** Just like the previous option, choosing this option will define a base project with the necessary settings to be a micro-frontend integrated with progressive _web_ application techniques (PWA) for a _remote_ application. However, this application does not have internal components.
+
+4. Finally, the user must choose whether he wants the modules to be installed immediately or if he will do it at a later time:
+
+<p align="center">
+<img src="https://github.com/andre-violin/create-e-cattle-app/raw/main/assets/dependecies.png" alt="Image showing the user choosing in the terminal or command prompt whether the modules will be installed immediately or not" />
+</p>
+
+A message is displayed after the process:
+
+<p align="center">
+<img src="https://github.com/andre-violin/create-e-cattle-app/raw/main/assets/installed.png" alt="Image showing a final message" />
+</p>
+
+## Contribute 🚀
+
+If you want to contribute, clone this repository, create your own working branch and get to work!
+
+```bash
+git clone https://github.com/e-cattle/create-e-cattle-app.git
 ```
 
 ```bash
 git checkout -b feature/NAME
 ```
 
-No final, abra um *Pull Request* explicando o problema resolvido ou a funcionalidade adicionada. Se existir, adicione capturas de tela das modificações visuais e aguarde pela revisão!
+Finally, open a _Pull Request_ explaining the problem solved or the functionality added. If there is one, add screenshots of the visual changes and wait for the review!
 
-[Como criar uma Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request) |
-[Padrão de Commits](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+[How to create a Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request) |
+[Commit Pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
 
-## Licença 📃
+## License 📃
 
-Este projeto está sob a licença [MIT](./LICENSE) license
+This project is licensed under the [MIT](./LICENSE) license

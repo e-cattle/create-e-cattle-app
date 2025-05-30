@@ -55,6 +55,10 @@ async function main() {
               value: 'base-host-vue',
               label: 'Base and Host - Vue.js, Vuetify and Vite',
             },
+            {
+              value: 'base-host-credential-vue',
+              label: 'Base and Host Credential - Vue.js, Vuetify and Vite',
+            },
             { value: 'host-vue', label: 'Host - Vue.js, Vuetify and Vite' },
             {
               value: 'host-credential-vue',
@@ -86,6 +90,12 @@ async function main() {
     const s = p.spinner();
     s.start('Installing via npm');
     runCommand(`cd ${project.name} && npm install`);
+    if (
+      project.type === 'base-host-vue' ||
+      project.type === 'base-host-credential-vue'
+    ) {
+      runCommand(`cd ${project.name}\\host_app && npm install`);
+    }
     // await setTimeout(2500);
     s.stop('Installed via npm');
   }
